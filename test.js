@@ -46,7 +46,7 @@ describe("Post", () => {
         .get("/orders");
   
       expect(res.body).to.be.an("array");
-      expect(res.body.some(order => order._id === createdorder._id)).to.be.true;
+      expect(res.body.some(order => order._id === createdorder.id)).to.be.true;
     });
   
     it("Should get one order by id", async () => {
