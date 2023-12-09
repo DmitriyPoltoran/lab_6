@@ -52,7 +52,7 @@ describe("Post", () => {
     it("Should get one order by id", async () => {
       const res = await chai
         .request(app)
-        .get(`/orders/${createdorder._id}`);
+        .get(`/orders/${createdorder.id}`);
   
       expect(res.body).to.deep.equal(createdorder);
     });
