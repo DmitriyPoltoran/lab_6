@@ -10,7 +10,6 @@ mongoose.connect("mongodb+srv://dimapautaran:w5fsFhnZwcGmSJnL@cluster0.rozq6zo.m
   .then(() => console.log('Connected'))
   .catch((e) => {
     console.log(e,"Connection error");
-    console.log('hello')
     process.exit()
   });
 
